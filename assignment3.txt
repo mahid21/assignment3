@@ -1,0 +1,50 @@
+1. Using for loops, write a Javascript program to output the following
+pattern -
+let n = 4;
+let string = " ";
+let count = 1;
+
+for (let i = 1; i <= n; i++) {
+  for (let j = 1; j <= i; j++) {
+    string += count;
+    count++;
+  }
+  string += " \n ";
+}
+console.log(string);
+
+2.Write a program to find whether a given number is armstrong number or
+
+not-
+var num=154;
+console.log(num);
+var check=num;
+var armstrong=0;
+var sum=0;
+var power;
+var len=num.toString().length;
+while(num!=0){
+    armstrong=num%10;
+    power=Math.pow(armstrong,len);
+    sum=sum+power;
+    num=parseInt(num /10);
+
+}
+if(check==sum){
+    console.log("This is Armstrong Number");
+}
+else{
+    console.log("This is not Armstrong Number");
+}
+
+3. Write a program to find whether a given number is special number or
+
+not-
+
+var num=4;
+var fact=1;
+var sum=0;
+for(var i=num;i>=1;i--){
+    fact=fact*i;
+}
+console.log("special number ",fact);
